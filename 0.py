@@ -55,10 +55,11 @@ with open("model.config", "w") as text_file:
 # 模型訓練結果存檔
 model.save_weights("model.weight")
 
-# 顯示 第1筆訓練資料的圖形，確認是否正確
+# 顯示 第1-2筆訓練資料的圖形，確認是否正確
 plt.imshow(X_test[0])
 plt.show() 
-
+plt.imshow(X_test[1])
+plt.show()
 
 plt.plot(train_history.history['loss'])  
 plt.plot(train_history.history['val_loss'])  
