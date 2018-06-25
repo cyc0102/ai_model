@@ -24,7 +24,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 y_TrainOneHot = np_utils.to_categorical(y_train) 
 y_TestOneHot = np_utils.to_categorical(y_test) 
 
-# 將 training 的 input 資料轉為2維
+# 將 training 的 input 資料轉為1維
 X_train_2D = X_train.reshape(60000, 28*28).astype('float32')  
 X_test_2D = X_test.reshape(10000, 28*28).astype('float32')  
 
