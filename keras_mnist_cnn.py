@@ -80,7 +80,7 @@ def show_train_history(train_acc,test_acc):
     plt.legend(['train', 'test'], loc='upper left')
     plt.show()
 
-show_train_history('acc','val_acc')
+# show_train_history('acc','val_acc')
 
 show_train_history('loss','val_loss')
 
